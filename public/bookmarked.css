@@ -1,0 +1,60 @@
+body {
+    background-image: url('https://wallpapercave.com/wp/VLDVYQU.jpg');
+    background-size: cover; /* Ensures the background covers the entire page */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed in place */
+    margin: 0; /* Removes default margin from body */
+    padding: 0; /* Removes default padding from body */
+    min-height: 100vh; /* Ensures the body takes up at least the full height of the viewport */
+}
+
+.information {
+    justify-content: space-between; /* Distributes space evenly between items */
+    display: inline;
+    flex-direction: row;
+}
+
+.info {
+    background-color: lightblue;
+    border: 1px solid #ddd;
+    border-radius: 5%;
+    float: left;
+    padding: 2%;
+    height: 350px;
+    margin: 1%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(33.333% - 40px); /* Ensure three items per row, accounting for margins */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px blue;
+    cursor:pointer;
+}
+
+#title {
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+}
+
+#author {
+    color: black;
+    margin: 0;
+}
+
+#image {
+    max-width: 100px;
+    margin: 10px 0;
+}
+
+#deleteButton {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}

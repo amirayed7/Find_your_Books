@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarked</title>
+    <link rel="stylesheet" href="bookmarked.css">
+</head>
+<body>
+    <% for(var i = 0; i < books.length; i++) { %>
+        <div class="information">
+            <div class="info" >
+                <h2 id="title"><%= books[i].title %></h2>
+                <h3 id="author">By: <%= books[i].author %></h3>
+                <img id="image" src="<%= books[i].image %>"/>
+                <button class="deleteButton" id="deleteButton" data-id="<%= books[i]._id %>">Delete</button>
+            </div>
+        </div>
+    <% } %>
+<script src="main.js"></script>
+<script src="server.js"></script>
+</body>
+</html>
+
